@@ -1,0 +1,25 @@
+#!/bin/sh
+set -ex
+
+# Build Dependencies
+apk add \
+  --no-cache \
+  --virtual build-dependencies \
+  build-base
+
+# Inspec
+gem install --no-document inspec -v ${INSPEC_VERSION}
+
+# Misc Depedencies
+apk add --no-cache \
+  ca-certificates=${CACERTIFICATES_VERSION} \
+  git=${GIT_VERSION} \
+  openssh=${OPENSSH_VERSION}
+
+# Clean
+apk del build-dependencies
+
+# CIS Hardening
+touch /etc/login.defs
+chmod 0444 /etc/login.defs
+chmod 0600 /etc/shadow
