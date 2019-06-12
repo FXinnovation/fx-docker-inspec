@@ -13,6 +13,8 @@ ADD ./resources /resources
 
 RUN /resources/build && rm -rf /resources
 
+ENTRYPOINT ["inspec"]
+
 LABEL "maintainer"="cloudsquad@fxinnovation.com" \
       "org.label-schema.name"="inspec" \
       "org.label-schema.base-image.name"="docker.io/library/ruby" \
