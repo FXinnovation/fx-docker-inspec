@@ -8,7 +8,7 @@ apk add \
   build-base
 
 # Inspec
-gem install --no-document inspec -v ${INSPEC_VERSION}
+gem install --no-document inspec-bin -v ${INSPEC_BIN_VERSION}
 
 # Misc Depedencies
 apk add --no-cache \

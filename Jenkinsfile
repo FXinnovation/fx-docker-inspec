@@ -1,3 +1,4 @@
 fxDockerImage(
-  image: 'inspec'
+  image: 'inspec',
+  pushLatest: true
 )

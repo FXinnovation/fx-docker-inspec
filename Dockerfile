@@ -5,8 +5,8 @@ ARG VCS_REF
 ARG VERSION
 
 ENV CACERTIFICATES_VERSION="20190108-r0" \
-    GIT_VERSION="2.20.1-r0" \ 
-    INSPEC_VERSION="4.3.2" \
+    GIT_VERSION="2.20.1-r0" \
+    INSPEC_BIN_VERSION="4.3.2" \
     OPENSSH_VERSION="7.9_p1-r5"
 
 ADD ./resources /resources
@@ -23,7 +23,7 @@ LABEL "maintainer"="cloudsquad@fxinnovation.com" \
       "org.label-schema.vendor"="FXinnovation" \
       "org.label-schema.schema-version"="1.0.0-rc.1" \
       "org.label-schema.applications.ca-certificates.version"=$CACERTIFICATES_VERSION \
-      "org.label-schema.applications.inspec.version"=$INSPEC_VERSION \
+      "org.label-schema.applications.inspec-bin.version"=$INSPEC_BIN_VERSION \
       "org.label-schema.applications.git.version"=$GIT_VERSION \
       "org.label-schema.applications.openssh.version"=$OPENSSH_VERSION \
       "org.label-schema.vcs-ref"=$VCS_REF \
