@@ -1,0 +1,29 @@
+
+0.5.0 / 2020-01-13
+==================
+
+  * tech: bumps pre-commit version
+  * tech: bumps ruby, alpine, inspec & deps
+
+0.4.0 / 2019-07-29
+==================
+
+  * Set inspec to 4.7.24
+
+0.3.0 / 2019-07-12
+==================
+
+  * Set inspec to 4.7.3
+
+0.2.0 / 2019-06-12
+==================
+
+  * Add entrypoint to inspec
+  * Change from incpec to inspec-bin, and add precommit
+
+0.1.0 / 2019-05-13
+==================
+
+  * Merge branch 'feature/init' of fxinnovation-public/docker-inspec into master
+  * Initialisation
+  * Initial commit
