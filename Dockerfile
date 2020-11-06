@@ -1,13 +1,15 @@
-FROM ruby:2.6.5-alpine3.11
+ARG RUBYIMAGE_VERSION=2.6.6-alpine3.12
+FROM ruby:${RUBYIMAGE_VERSION}
+ARG RUBYIMAGE_VERSION
 
 ARG BUILD_DATE
 ARG VCS_REF
 ARG VERSION
 
-ENV CACERTIFICATES_VERSION="20191127-r0" \
-    GIT_VERSION="2.24.1-r0" \
-    INSPEC_BIN_VERSION="4.18.51" \
-    OPENSSH_VERSION="8.1_p1-r0"
+ENV CACERTIFICATES_VERSION="20191127-r4" \
+    GIT_VERSION="2.26.2-r0" \
+    INSPEC_BIN_VERSION="4.23.15" \
+    OPENSSH_VERSION="8.3_p1-r0"
 
 ADD ./resources /resources
 
@@ -18,7 +20,7 @@ ENTRYPOINT ["inspec"]
 LABEL "maintainer"="cloudsquad@fxinnovation.com" \
       "org.label-schema.name"="inspec" \
       "org.label-schema.base-image.name"="docker.io/library/ruby" \
-      "org.label-schema.base-image.version"="2.6.5-alpine3.11" \
+      "org.label-schema.base-image.version"=$RUBYIMAGE_VERSION \
       "org.label-schema.description"="Inspec in a container" \
       "org.label-schema.url"="https://inspec.io/" \
       "org.label-schema.vcs-url"="https://scm.dazzlingwrench.fxinnovation.com/fxinnovation-public/docker-inspec" \
