@@ -1,4 +1,4 @@
-0.7.0 / 2021-08-13
+1.0.0 / 2021-08-13
 ==================
 
   * (BREAKING) chore: pins ruby base image to 3.0.2-alpine3.14
