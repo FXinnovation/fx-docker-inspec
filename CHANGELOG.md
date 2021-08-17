@@ -2,7 +2,7 @@
 ==================
 
   * (BREAKING) chore: pins ruby base image to 3.0.2-alpine3.14
-  * feat: pins inspec to 4.38.9
+  * feat: pins inspec to 4.41.2
   * chore: pins cacertificates to 20191127-r5
   * chore: pins git to 2.30.2-r0
   * chore: pins openssh to 8.4_p1-r3
