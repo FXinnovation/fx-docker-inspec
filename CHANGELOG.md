@@ -1,11 +1,12 @@
 0.7.0 / 2021-08-13
 ==================
 
-  * chore: pins ruby base image to 3.0.2-alpine3.14
+  * (BREAKING) chore: pins ruby base image to 3.0.2-alpine3.14
+  * feat: pins inspec to 4.38.9
   * chore: pins cacertificates to 20191127-r5
   * chore: pins git to 2.30.2-r0
   * chore: pins openssh to 8.4_p1-r3
-  * chore: pins inspec to 4.38.9
+  * chore: pins pre-commit-hooks version to v4.0.1
 
 0.6.0 / 2020-11-06
 ==================
